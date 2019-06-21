@@ -98,7 +98,7 @@
         if(status == 'success'){
           localStorage.setItem('access-user', JSON.stringify(result));
           window.localStorage.removeItem('register-user');
-          that.$router.push({path: '/'});
+          that.$router.push({path: '/'});//登陆成功后跳转的路径
         } else {
 		  this.loading = false;
           this.$message.error("登录失败，账号或密码错误");

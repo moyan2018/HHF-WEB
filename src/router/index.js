@@ -38,7 +38,7 @@ let router = new Router({
           component: LeftNav,
           name: '企业管理',
           leaf: true, // 只有一个节点
-          iconCls: 'iconfont icon-home', // 图标样式class
+          iconCls: 'el-icon-s-unfold', // 图标样式class
           menuShow: true,
           children: [
             { path: '/enterprise/list', component: EnterpriseList, name: '企业列表', menuShow: true }
@@ -49,7 +49,7 @@ let router = new Router({
           component: LeftNav,
           name: 'enterpriseAdd',
           leaf: true, // 只有一个节点
-          iconCls: 'el-icon-menu',
+          iconCls: 'el-icon-s-unfold',
           menuShow: true,
           children: [
             { path: '/enterprise/add', component: EnterpriseAdd, name: '企业添加', menuShow: true }
@@ -60,7 +60,7 @@ let router = new Router({
           component: LeftNav,
           name: 'enterpriseDetail',
           leaf: true, // 只有一个节点
-          iconCls: 'el-icon-menu',
+          iconCls: 'el-icon-s-unfold',
           menuShow: true,
           children: [
             { path: '/enterprise/detail', component: EnterpriseDetail, name: '企业详情', menuShow: true }

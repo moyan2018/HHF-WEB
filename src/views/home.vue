@@ -18,7 +18,9 @@
       </div>
       <div class="topbar-account topbar-btn">
         <el-dropdown trigger="click">
+          <span class="el-dropdown-link userinfo-inner">
             <img src="../assets/logo.gif" style="border-radius: 7px;width: 45px;margin: 2px">
+          </span>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>
               <div @click="jumpTo('/user/profile')"><span style="color: #555;font-size: 14px;">个人信息</span></div>

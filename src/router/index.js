@@ -113,7 +113,14 @@ let router = new Router({
 
   ]
 });
-
+/**
+ * window.sessionStorage   会话缓存，会话结束后，缓存消失
+ * window.localStorage  本地缓存，会话结束后，缓存不消失，得手动清除
+ * setItem(key,value)
+ * getItem(key)
+ * removeItem(key)
+ * clear()
+ */
 router.beforeEach((to, from, next) => {
   // console.log('to:' + to.path)
   if (to.path.startsWith('/login')) {

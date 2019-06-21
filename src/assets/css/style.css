@@ -11,6 +11,7 @@
 
 html {
   font-size: 14px;
+  background-image: url("../back.jpg");
 }
 
 @media all and (max-width: 768px) {

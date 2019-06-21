@@ -1,14 +1,8 @@
 <template>
   <div>
-    <div class="header-content">
-      <div class="logo-part">
-        <img src="../assets/logo.gif" width="30" height="30">
-        <span>后台管理系统</span>
-      </div>
-    </div>
     <el-form ref="AccountForm" :model="account" :rules="rules" label-position="left" label-width="0px"
              class="demo-ruleForm login-container">
-      <h3 class="title">欢迎登录</h3>
+      <h3 class="title">欢迎登录后台管理系统</h3>
       <el-form-item prop="username">
         <el-input type="text" v-model="account.username" auto-complete="off" placeholder="手机号或公司企业码"></el-input>
       </el-form-item>
@@ -24,9 +18,10 @@
         <el-button type="primary" style="width:100%;" @click.native.prevent="handleLogin"  :loading="loading">登录</el-button>
       </el-form-item>
     </el-form>
-	<div class="footer">
-      <footer-copyright></footer-copyright>
-    </div>
+    <!--登录界面底端的组件-->
+<!--	  <div class="footer">-->
+<!--      <footer-copyright></footer-copyright>-->
+<!--    </div>-->
   </div>
 </template>
 <script>

@@ -10,10 +10,16 @@ import DeptManager from '@/views/dept/index.vue'
 import NotFound from '@/components/404.vue'
 
 // 懒加载方式，当路由被访问的时候才加载对应组件
-const Login = resolve => require(['@/views/login'], resolve)
+const Login = resolve => require(['@/views/login'], resolve);
 
+/**
+ * 安装路由插件
+ */
 Vue.use(Router)
 
+/**
+ * 新建路由
+ */
 let router = new Router({
   routes: [
     {

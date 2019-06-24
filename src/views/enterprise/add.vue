@@ -44,20 +44,24 @@
     </el-form>
   </div>
 </template>
+
 <script>
+  var AddData = {
+    form:{
+      number: '',
+      name: '',
+      industry: '',
+      model: '国有企业',
+      range: [],
+      regDate: ''
+    }
+  }
+
   export default {
+    name:"add",
+    form:AddData.form,//对外调用的
     data(){
-      return {
-        msg:'',
-        form: {
-          number: '',
-          name: '',
-          industry: '',
-          model: '国有企业',
-          range: [],
-          regDate: ''
-        }
-      };
+      return AddData;//对内调用的
     }
   }
 </script>

@@ -7,6 +7,7 @@
       </div>
       <div class="topbar-title">
         <el-row v-show="$store.state.topNavState==='enterprise'">
+          <!-- 注意：这里就是topNavState作用之处，根据当前路由所在根路由的type值判断显示不同顶部导航菜单,可用于多个系统的集成 -->
           <el-col :span="24">
             <el-menu :default-active="defaultActiveIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect" :router="true">
               <el-menu-item index="/">企业信息</el-menu-item>
